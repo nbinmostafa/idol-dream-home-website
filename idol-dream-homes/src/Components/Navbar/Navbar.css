@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+  nav ul li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  nav ul li::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #C2B4A3;
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li:hover::before {
+    width: 100%;
+  }
+  

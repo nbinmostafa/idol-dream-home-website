@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import './Navbar.css';
-import logo from "./Project.png";
+import logo from "./project.png";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 

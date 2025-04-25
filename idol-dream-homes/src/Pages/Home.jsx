@@ -28,7 +28,7 @@ function Home() {
     <div>
       <section
         className="h-screen w-full bg-cover bg-center text-white snap-start relative"
-        style={{ backgroundImage: `url('/src/assets/Interior3.png')` }}
+        style={{ backgroundImage: `url('/Interior3.png')` }}
       >
         {/* Black overlay on top of background */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-black/40 z-0" />

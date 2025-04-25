@@ -68,7 +68,7 @@ function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 w-full bg-[#1B1B1B] text-white flex flex-col items-center py-6 space-y-4 shadow-lg md:hidden z-40"
+            className="absolute top-full left-0 w-full bg-[#1B1B1B] text-white flex flex-col items-center py-6 space-y-4 shadow-lg md:hidden z-40 border border-[#C2B4A3] rounded-lg"
           >
             {navItems.map((item) => (
               <a

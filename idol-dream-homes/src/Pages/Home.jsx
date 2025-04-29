@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 import Navbar from "../Components/Navbar/Navbar.jsx";
 import CountUp from 'react-countup';
 import { useInView } from "react-intersection-observer";
-import AboutImage from "../assets/about-image.jpg"; // replace with your actual image path
 import { HomeIcon, Building2, Ruler, Leaf } from "lucide-react";
-import Hero from "../Components/Hero/GuidedJourneyHero.jsx"; 
 import Footer from "../Components/Footer/Footer.jsx"; // Import your Footer component
+
+
+
 
 function ScrollCount({ end, duration = 2, suffix = "" }) {
   const { ref, inView } = useInView({
@@ -51,7 +52,7 @@ function Home() {
             <p className="mt-4 text-lg sm:text-xl text-white/80">
               Step into your new space — a home that’s ready when you are, built for the life you want.
             </p>
-            <button className="mt-8 px-6 py-3 bg-[#F5F0E6] text-black rounded-full text-lg font-semibold hover:bg-[#C2B4A3] transition">
+            <button className="mt-8 px-6 py-3 bg-[#C2B4A3] text-black rounded-full text-lg font-semibold hover:bg-[#F5F0E6] transition">
               Explore Listings
             </button>
           </motion.div>
@@ -174,13 +175,138 @@ function Home() {
             className="md:w-1/2"
           >
             <img
-              src={AboutImage}
+              src="../about-image.jpg" // Ensure this image is in the correct path
               alt="Our Vision"
               className="rounded-2xl shadow-lg w-full object-cover"
             />
           </motion.div>
         </div>
       </section>
+      
+      <section className="relative bg-[#F5F0E6] text-[#1B1B1B] py-24 px-6 overflow-hidden">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+
+          {/* Left Text Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="md:w-1/2 space-y-6"
+          >
+            <h2 className="text-4xl sm:text-5xl font-bold border-l-8 border-[#C2B4A3] pl-4">
+              More Than Homes — A Lifestyle
+            </h2>
+            <p className="text-lg text-[#666] leading-relaxed">
+              At <span className="text-[#C2B4A3] font-semibold">Idol Dream Homes</span>, we craft more than luxurious properties; 
+              we create transformative environments that shape lives, inspire dreams, and define prestige. 
+              Every residence we build reflects a seamless fusion of innovation, elegance, and timeless design.
+            </p>
+            <p className="text-lg text-[#666] leading-relaxed">
+              For those who seek more than the ordinary, we offer a gateway to sophistication, comfort, and distinction — 
+              where every detail is meticulously curated to elevate modern living into an art form.
+            </p>
+
+            <button className="mt-4 px-6 py-3 bg-[#F5F0E6] text-black border-2 border-[#C2B4A3] rounded-full text-lg font-semibold hover:bg-[#C2B4A3] hover:text-white transition">
+              Learn More About Our Vision
+            </button>
+          </motion.div>
+
+          {/* Right Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="md:w-1/2"
+          >
+            <img
+              src="../Interior.png" 
+              alt="Elegant Living"
+              className="rounded-2xl shadow-lg w-full object-cover"
+            />
+          </motion.div>
+
+        </div>
+      </section>
+
+      <section className="relative bg-[#F5F0E6] text-[#1B1B1B] py-24 px-6 overflow-hidden">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+
+          {/* Left Side: Text */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="md:w-1/2 space-y-8"
+          >
+            <h2 className="text-4xl sm:text-5xl font-bold border-l-8 border-[#C2B4A3] pl-4">
+              Get In Touch
+            </h2>
+            <p className="text-lg text-[#666] leading-relaxed">
+              Ready to find your dream home or have questions?  
+              Our team is here to help you every step of the way. 
+              Reach out and let's start your journey today!
+            </p>
+
+            <div className="space-y-4 text-[#1B1B1B]">
+              <div>
+                <p className="font-semibold">Phone:</p>
+                <p>+1 (XXX) XXX-XXXX</p> {/* You can put your real number later */}
+              </div>
+              <div>
+                <p className="font-semibold">Email:</p>
+                <p>info@idoldreamhomes.com</p> {/* Update this */}
+              </div>
+              <div>
+                <p className="font-semibold">Office:</p>
+                <p>Dhaka, Bangladesh | Toronto, Canada</p> {/* Your locations */}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Right Side: Contact Form */}
+          <motion.form
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="md:w-1/2 bg-white/70 p-8 rounded-2xl shadow-lg backdrop-blur-md space-y-6"
+          >
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-medium text-[#1B1B1B]">Name</label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="p-3 rounded-lg border border-[#C2B4A3] focus:ring-2 focus:ring-[#C2B4A3] outline-none"
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-medium text-[#1B1B1B]">Email</label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                className="p-3 rounded-lg border border-[#C2B4A3] focus:ring-2 focus:ring-[#C2B4A3] outline-none"
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-medium text-[#1B1B1B]">Message</label>
+              <textarea
+                placeholder="How can we help you?"
+                rows="4"
+                className="p-3 rounded-lg border border-[#C2B4A3] focus:ring-2 focus:ring-[#C2B4A3] outline-none resize-none"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full mt-4 bg-[#C2B4A3] text-white font-semibold py-3 rounded-full hover:bg-[#B09575] transition"
+            >
+              Send Message
+            </button>
+          </motion.form>
+
+        </div>
+      </section>
+
+
+
       <Footer/>
 
       

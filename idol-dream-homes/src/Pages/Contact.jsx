@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar.jsx";
+import Footer from "../Components/Footer/Footer.jsx";
 
 function Contact() {
   const navigate = useNavigate();
@@ -108,7 +109,9 @@ function Contact() {
 
         </div>
       </section>
+      <Footer/>
     </div>
+    
   );
 }
 

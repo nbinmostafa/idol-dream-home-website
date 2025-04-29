@@ -1,4 +1,5 @@
 import Navbar from "../Components/Navbar/Navbar.jsx";
+import Footer from "../Components/Footer/Footer.jsx";
 
 function Projects() {
     return (
@@ -7,6 +8,7 @@ function Projects() {
             <div className="min-h-screen flex items-center justify-center">
                 <h1 className="text-5xl font-bold">Projects</h1>
             </div>
+            <Footer />
         </div>
     );
   }

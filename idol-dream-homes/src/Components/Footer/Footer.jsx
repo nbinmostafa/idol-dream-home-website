@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 function Footer() {
     return (
       <footer className="bg-[#1B1B1B] text-white py-12 px-6">
@@ -15,17 +18,17 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-[#CCCCCC]">
-              <li><a href="#home" className="hover:text-[#C2B4A3] transition">Home</a></li>
-              <li><a href="#about" className="hover:text-[#C2B4A3] transition">About</a></li>
-              <li><a href="#projects" className="hover:text-[#C2B4A3] transition">Projects</a></li>
-              <li><a href="#contact" className="hover:text-[#C2B4A3] transition">Contact</a></li>
+              <li><Link to="/" className="hover:text-[#C2B4A3] transition">Home</Link></li>
+              <li><Link to="/about" className="hover:text-[#C2B4A3] transition">About</Link></li>
+              <li><Link to="/projects" className="hover:text-[#C2B4A3] transition">Projects</Link></li>
+              <li><Link to="/contact" className="hover:text-[#C2B4A3] transition">Contact</Link></li>
             </ul>
           </div>
   
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <p className="text-[#CCCCCC]">2697 Madani Road Ave,<br />Vatara, Dhaka 1212, Bangladesh</p>
+            <p className="text-[#CCCCCC]">2697 Madani Road Ave,<br /> Dhaka 1212, Bangladesh</p>
             <p className="mt-2 text-[#CCCCCC]">Phone: 01976601666</p>
             <p className="text-[#CCCCCC]">Email: info@idhbd.com</p>
           </div>

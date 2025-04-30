@@ -3,11 +3,11 @@ import './Navbar.css';
 import logo from "./project.png";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link, useLocation } from "react-router-dom"; // ✅ useLocation to track active route
+import { Link, useLocation } from "react-router-dom"; //  useLocation to track active route
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // ✅ get current path
+  const location = useLocation(); // get current path
 
   const navItems = [
     { path: "/", label: "Home" },

@@ -6,14 +6,14 @@ const team = [
         name: "Ferdous Hauque",
         role: "Managing Director",
         quote: "Every brick we lay is a promise to the families we serve.",
-        image: "/public/ferdous.png",
+        image: "/Ferdous.png",
     }
     ,
     {
         name: "Mostafa Kamal",
         role: "Chairman & Visionary",
         quote: "Committed to shaping a better tomorrow through meaningful spaces.",
-        image: "/public/chairman1.jpg",
+        image: "/chairman1.jpg",
     },
   
   // Add more members as needed

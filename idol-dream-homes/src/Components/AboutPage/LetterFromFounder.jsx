@@ -11,7 +11,7 @@ export default function LetterFromFounder() {
             transition={{ duration: 1 }}
         >
             <img
-                src="/public/chairman1.jpg"
+                src="/chairman1.jpg"
                 alt="Mostafa Kamal"
                 className="rounded-xl object-cover w-full h-[400px] mb-4 transition-all duration-300 group-hover:scale-[1.03]"
             />

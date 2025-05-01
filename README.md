@@ -1,6 +1,6 @@
 # 🏠 Idol Dream Homes — Real Estate Website
 
-**Idol Dream Homes** is a luxury real estate development company based in **Dhaka, Bangladesh** and **Toronto, Canada**.  
+**Idol Dream Homes** is a luxury real estate development company based in **Dhaka, Bangladesh**.  
 This website serves as a sleek, responsive, and engaging platform for showcasing upcoming projects, company values, and contact information.
 
 Built using **React**, **TailwindCSS**, and **Framer Motion**, the site emphasizes elegant design, smooth user experience, and mobile responsiveness.

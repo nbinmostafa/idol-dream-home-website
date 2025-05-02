@@ -1,6 +1,6 @@
 
 import Footer from "../Components/Footer/Footer.jsx"; 
-import ContactForm from "../Components/ContactForm/ContactForm.jsx";
+import ContactForm from "../Components/ContactPage/ContactForm.jsx";
 import Hero from "../Components/HomePage/Hero.jsx";
 import Metrics from "../Components/HomePage/Metrics.jsx";
 import About from "../Components/HomePage/About.jsx";

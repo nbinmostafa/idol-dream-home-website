@@ -20,7 +20,7 @@ export default function AboutIntro() {
     <section
       className="h-screen flex flex-col justify-center items-center bg-[#ac9e82] text-[#1B1B1B] px-6 text-center relative"
       style={{
-        backgroundImage: `url('/public/about-hero.jpg')`, 
+        backgroundImage: `url('/about-hero.jpg')`, 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundBlendMode: 'overlay'

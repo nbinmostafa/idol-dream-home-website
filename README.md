@@ -12,7 +12,9 @@ Built using **React**, **TailwindCSS**, and **Framer Motion**, the site emphasiz
 🔗 [Visit the Live Website](https://idol-dream-home.vercel.app)
 
 ---
+> 🛡️ Note: This project was developed for **Idol Dream Homes**. The code is shared publicly **with full permission from the company** for educational and portfolio purposes.
 
+---
 ## ✨ Key Features
 
 - **📊 Animated Metrics** – Real-time counters for luxury units, development progress, and eco-certifications

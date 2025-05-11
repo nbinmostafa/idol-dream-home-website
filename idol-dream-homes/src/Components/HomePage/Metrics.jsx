@@ -24,7 +24,6 @@ export default function Metrics() {
         <section
             className="relative bg-[#f6f0f0de] text-black py-20 px-4"
             style={{
-            backgroundImage: `url('/Interior2.png')`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundSize: 'cover',

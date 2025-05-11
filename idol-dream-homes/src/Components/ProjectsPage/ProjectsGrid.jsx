@@ -87,9 +87,9 @@ const ProjectsGrid = () => {
 
 
 
-        <section id="projects" className="bg-[#f8f5f0] py-20 px-6">
+        <section id="listings" className="bg-[#f8f5f0] py-20 px-6">
         <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-semibold text-center text-[#1B1B1B] mb-12">
+            <h2 className="text-3xl font-bold text-center text-[#1B1B1B] mb-12">
             Explore Our Developments
             </h2>
 

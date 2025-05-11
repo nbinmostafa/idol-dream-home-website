@@ -5,6 +5,7 @@ import Hero from "../Components/HomePage/Hero.jsx";
 import Metrics from "../Components/HomePage/Metrics.jsx";
 import About from "../Components/HomePage/About.jsx";
 import AboutExtended from "../Components/HomePage/AboutExtended.jsx";
+import GetInTouch from "../Components/HomePage/GetInTouch.jsx";
 
 
 
@@ -18,10 +19,11 @@ function Home() {
 
       {/* About Section */}
       <About/>
+      
       <AboutExtended/> 
 
       {/* Contact Form Section */}
-      <ContactForm/>
+      <GetInTouch/>
 
       {/* Footer */}
       <Footer/>

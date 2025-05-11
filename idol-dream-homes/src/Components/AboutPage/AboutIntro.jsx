@@ -63,13 +63,31 @@ export default function AboutIntro() {
 
       {/* Scroll Cue */}
       <motion.div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-[#C2B4A3] text-sm"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
+        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 text-center"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 1.5,
+          duration: 0.8,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
       >
-        ↓ Scroll to Learn More
+        <a href="#company" className="group flex flex-col items-center text-[#C2B4A3] hover:text-[#F5F0E6] transition">
+          <span className="text-sm mb-2">Scroll to Explore</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-6 h-6 animate-bounce"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
       </motion.div>
+
     </section>
   );
 }

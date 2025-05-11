@@ -27,7 +27,7 @@ export default function AboutExtended() {
               where every detail is meticulously curated to elevate modern living into an art form.
             </p>
 
-            <Link to='/about#letter-from-founder'>
+            <Link to='/about#vision' className="inline-block">
                 <button className="mt-4 px-6 py-3 bg-[#F5F0E6] text-black border-2 border-[#C2B4A3] rounded-full text-lg font-semibold hover:bg-[#C2B4A3] hover:text-white transition">
                 Learn More About Our Vision
                 </button>

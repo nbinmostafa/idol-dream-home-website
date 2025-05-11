@@ -15,7 +15,7 @@ function ContactForm() {
   return (
     <div className="bg-[#1B1B1B] text-white min-h-screen">
      
-      <section className="relative bg-[#F5F0E6] text-[#1B1B1B] py-24 px-6 overflow-hidden">
+      <section id="form" className="relative bg-[#F5F0E6] text-[#1B1B1B] py-24 px-6 overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
 
           {/* Left Side: Text */}
@@ -26,7 +26,7 @@ function ContactForm() {
             className="md:w-1/2 space-y-8"
           >
             <h2 className="text-4xl sm:text-5xl font-bold border-l-8 border-[#C2B4A3] pl-4">
-              Get In Touch
+              Let’s Talk About Your Dream Home
             </h2>
             <p className="text-lg text-[#666] leading-relaxed">
               Ready to find your dream home or have questions?  

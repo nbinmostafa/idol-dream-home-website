@@ -8,7 +8,7 @@ function Footer() {
   
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-[#C2B4A3] mb-4">Idol Dream Homes</h3>
+            <h3 className="text-xl font-bold text-[#C2B4A3] mb-4">Idol Dream Homes Ltd.</h3>
             <p className="text-[#CCCCCC]">
               Elevating modern living through smart, sustainable, and luxurious real estate. Live the dream today.
             </p>

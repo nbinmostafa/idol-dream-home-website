@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Navbar from "../Navbar/Navbar.jsx";
-
+import { Link, useNavigate } from "react-router-dom"; 
 
 
 
@@ -34,9 +34,11 @@ function Hero(){
             <p className="mt-4 text-lg sm:text-xl text-white/80">
               Step into your new space — a home that’s ready when you are, built for the life you want.
             </p>
-            <button className="mt-8 px-6 py-3 bg-[#C2B4A3] text-black rounded-full text-lg font-semibold hover:bg-[#F5F0E6] transition">
-              Explore Listings
-            </button>
+            <Link to="/Projects#listings" smooth={true} duration={500}>
+              <button className="mt-8 px-6 py-3 bg-[#C2B4A3] text-black rounded-full text-lg font-semibold hover:bg-[#F5F0E6] transition">
+                Explore Listings
+              </button>
+            </Link>
           </motion.div>
         </div>
       </section>

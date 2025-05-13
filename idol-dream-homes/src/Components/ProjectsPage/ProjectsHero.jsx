@@ -1,8 +1,18 @@
+import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
-import React from "react";
 import { motion } from "framer-motion";
 
 const ProjectsHero = () => {
+  const [showScrollHint, setShowScrollHint] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollHint(window.scrollY < 100); // hides after 100px scroll
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section className="relative bg-[#81674cd3] text-[#ebe5e5] min-h-screen overflow-hidden">
       {/* Navbar */}
@@ -40,6 +50,7 @@ const ProjectsHero = () => {
           >
             Crafted with Purpose,
           </motion.h1>
+
           <motion.h2
             className="text-5xl sm:text-6xl font-light tracking-wide mb-6 italic text-[#d0d0d0]"
             initial={{ opacity: 0, y: 10 }}
@@ -63,42 +74,48 @@ const ProjectsHero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1, duration: 1 }}
           >
-            Explore a selection of spaces that go beyond luxury — built to elevate
-            your lifestyle through intelligent design and timeless aesthetics.
+            Explore a selection of spaces that go beyond luxury — built to
+            elevate your lifestyle through intelligent design and timeless
+            aesthetics.
           </motion.p>
         </motion.div>
       </div>
 
       {/* Scroll Hint + Label */}
-      <motion.div
-        className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 text-center"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 1.5,
-          duration: 0.8,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
-      >
-        <a
-          href="#listings"
-          className="group flex flex-col items-center text-[#f3f1ee] hover:text-[#e4c27d] transition"
+      {showScrollHint && (
+        <motion.div
+          className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 text-center"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 1.5,
+            duration: 0.8,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
         >
-          <span className="text-sm mb-2">Scroll to Explore</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6 animate-bounce"
+          <a
+            href="#listings"
+            className="group flex flex-col items-center text-[#f3f1ee] hover:text-[#e4c27d] transition"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </a>
-      </motion.div>
-
+            <span className="text-sm mb-2">Scroll to Explore</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6 animate-bounce"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </a>
+        </motion.div>
+      )}
     </section>
   );
 };

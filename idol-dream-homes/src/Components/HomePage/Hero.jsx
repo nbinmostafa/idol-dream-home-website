@@ -63,7 +63,7 @@ function Hero() {
             }}
           >
             <a
-              href="#listings"
+              href="#about"
               className="group flex flex-col items-center text-[#f3f1ee] hover:text-[#e4c27d] transition"
             >
               <span className="text-sm mb-2">Scroll to Explore</span>

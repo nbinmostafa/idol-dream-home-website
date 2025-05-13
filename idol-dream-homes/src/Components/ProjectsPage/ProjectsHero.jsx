@@ -15,8 +15,8 @@ const ProjectsHero = () => {
         className="absolute inset-0 opacity-10 z-0"
         style={{
           backgroundImage: "url('/skyline.jpg')",
-          backgroundSize: "contain",
-          backgroundRepeat: "repeat",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           mixBlendMode: "multiply",
         }}
       />
@@ -71,7 +71,7 @@ const ProjectsHero = () => {
 
       {/* Scroll Hint + Label */}
       <motion.div
-        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 text-center"
+        className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 text-center"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -81,7 +81,10 @@ const ProjectsHero = () => {
           repeatType: "reverse",
         }}
       >
-        <a href="#listings" className="group flex flex-col items-center text-[#f3f1ee] hover:text-[#e4c27d] transition">
+        <a
+          href="#listings"
+          className="group flex flex-col items-center text-[#f3f1ee] hover:text-[#e4c27d] transition"
+        >
           <span className="text-sm mb-2">Scroll to Explore</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +98,7 @@ const ProjectsHero = () => {
           </svg>
         </a>
       </motion.div>
+
     </section>
   );
 };

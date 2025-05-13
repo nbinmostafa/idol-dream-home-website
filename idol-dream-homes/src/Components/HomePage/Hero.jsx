@@ -40,6 +40,36 @@ function Hero(){
               </button>
             </Link>
           </motion.div>
+          {/* Scroll Hint + Label */}
+          <motion.div
+            className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 text-center"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 1.5,
+              duration: 0.8,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          >
+            <a
+              href="#listings"
+              className="group flex flex-col items-center text-[#f3f1ee] hover:text-[#e4c27d] transition"
+            >
+              <span className="text-sm mb-2">Scroll to Explore</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6 animate-bounce"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+          </motion.div>
+              
         </div>
       </section>
       

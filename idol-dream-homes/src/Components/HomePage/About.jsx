@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 export default function About(){
     return(
       <section
+      id="about"
       className="relative bg-[#f0f0f0ab] text-[#1B1B1B] py-24 px-6 overflow-hidden"
       style={{
         backgroundImage: `url('/src/assets/Interior2.png')`, // subtle overlay pattern or image

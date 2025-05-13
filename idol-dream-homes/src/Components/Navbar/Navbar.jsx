@@ -18,7 +18,11 @@ function Navbar() {
 
   return (
     <nav className="w-full flex items-center justify-between px-6 py-4 bg-transparent z-50 relative">
-      <img src={logo} alt="Logo" className="size-20 m-2 md:size-25 lg:size-36 md:m-0.5" />
+      <a href="/" className="flex items-center">
+        {/* Logo */}
+        <img src={logo} alt="Logo" className="size-20 m-2 md:size-25 lg:size-36 md:m-0.5" />
+      </a>
+      
 
       {/* Desktop Nav */}
       <ul className="hidden md:flex gap-12 text-amber-50 font-mono text-lg font-semibold">

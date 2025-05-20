@@ -31,7 +31,7 @@ const ContactInfo = () => (
           <Phone className="w-10 h-10 text-[#C2B4A3]" />
           <div>
             <p className="text-lg font-medium text-[#444]">Call Us</p>
-            <p className="text-sm text-[#666] mt-2">+880 177 665 5444</p>
+            <p className="text-sm text-[#666] mt-2">+88 01794-186278</p>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const ContactInfo = () => (
           <Mail className="w-10 h-10 text-[#C2B4A3]" />
           <div>
             <p className="text-lg font-medium text-[#444]">Email Us</p>
-            <p className="text-sm text-[#666] mt-2">info@idolgroup.com</p>
+            <p className="text-sm text-[#666] mt-2">info@idhbd.com</p>
           </div>
         </div>
       </div>

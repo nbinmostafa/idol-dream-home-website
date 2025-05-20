@@ -29,7 +29,7 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <p className="text-[#CCCCCC]">2697 Madani Road Ave,<br /> Dhaka 1212, Bangladesh</p>
-            <p className="mt-2 text-[#CCCCCC]">Phone: 01976601666</p>
+            <p className="mt-2 text-[#CCCCCC]">Phone: +88 01794-186278</p>
             <p className="text-[#CCCCCC]">Email: info@idhbd.com</p>
           </div>
   

@@ -37,11 +37,11 @@ function ContactForm() {
             <div className="space-y-4 text-[#1B1B1B]">
               <div>
                 <p className="font-semibold">Phone:</p>
-                <p>+1 (XXX) XXX-XXXX</p>
+                <p>+88 01794-186278</p>
               </div>
               <div>
                 <p className="font-semibold">Email:</p>
-                <p>info@idoldreamhomes.com</p>
+                <p>info@idhbd.com</p>
               </div>
               <div>
                 <p className="font-semibold">Office:</p>

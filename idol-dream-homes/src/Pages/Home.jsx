@@ -18,6 +18,8 @@ function Home() {
         <Metrics />
       </section>
 
+      
+
       <section className="about-section container fade-in">
         <About />
       </section>

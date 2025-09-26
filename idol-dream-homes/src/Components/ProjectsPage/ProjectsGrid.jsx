@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const allProjects = [
   {
-    name: "IDH Residence 3600",
+    name: "IDOL RIDRIM",
     location: "Jolshiri Abashon, Dhaka",
     status: "Ongoing",
     description:

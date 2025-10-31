@@ -7,7 +7,7 @@ const ProjectsHero = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollHint(window.scrollY < 100); // hides after 100px scroll
+      setShowScrollHint(window.scrollY < 100);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -107,11 +107,7 @@ const ProjectsHero = () => {
               stroke="currentColor"
               className="w-6 h-6 animate-bounce"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </a>
         </motion.div>
@@ -121,3 +117,4 @@ const ProjectsHero = () => {
 };
 
 export default ProjectsHero;
+

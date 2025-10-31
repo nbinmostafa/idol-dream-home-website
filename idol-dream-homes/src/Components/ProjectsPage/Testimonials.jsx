@@ -8,12 +8,12 @@ const testimonials = [
   {
     name: "Mrs. Naznin Rahman",
     quote:
-      "Our family’s experience with Idol Dream Homes has been nothing short of extraordinary. The team truly understands modern luxury.",
+      "Our family's experience with Idol Dream Homes has been nothing short of extraordinary. The team truly understands modern luxury.",
   },
   {
     name: "Mr. Faisal Chowdhury",
     quote:
-      "From the first meeting to handover, the professionalism and transparency were unmatched. It feels like more than just a house—it’s home.",
+      "From the first meeting to handover, the professionalism and transparency were unmatched. It feels like more than just a house — it's home.",
   },
   {
     name: "The Alam Family",
@@ -23,7 +23,7 @@ const testimonials = [
   {
     name: "Sarah Karim",
     quote:
-      "The moment we walked into our new home, we felt it. This wasn’t just well-built — it was built with heart."
+      "The moment we walked into our new home, we felt it. This wasn't just well-built — it was built with heart."
   },
   {
     name: "Dr. Anisur Rahman",
@@ -55,12 +55,8 @@ const Testimonials = () => {
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
               <div className="bg-white rounded-3xl p-10 shadow-xl border border-[#e0d7cb] mx-4">
-                <p className="text-2xl sm:text-3xl italic text-[#444038] leading-relaxed mb-6">
-                  “{t.quote}”
-                </p>
-                <p className="text-[#978671] text-lg font-semibold tracking-wide">
-                  — {t.name}
-                </p>
+                <p className="text-2xl sm:text-3xl italic text-[#444038] leading-relaxed mb-6">“{t.quote}”</p>
+                <p className="text-[#978671] text-lg font-semibold tracking-wide">— {t.name}</p>
               </div>
             </SwiperSlide>
           ))}
@@ -71,3 +67,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

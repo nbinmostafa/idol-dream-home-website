@@ -8,7 +8,11 @@ import ProjectModal from "./ProjectModal.jsx";
 
 const allProjects = [
   {
+<<<<<<< HEAD
     name: "Idol Ridim",
+=======
+    name: "IDOL RIDRIM",
+>>>>>>> 27a6e77ebb0a86a3e07f42f3396e97bb56f516f9
     location: "Jolshiri Abashon, Dhaka",
     status: "Ongoing",
     description: "9-floor luxury residence designed for modern, spacious living.",
